@@ -1,0 +1,68 @@
+.fadeIn{
+    /* La animacion dura 4 segundos */
+    animation-duration: 4s;
+    /* la animacion hace ida y regreso */
+    animation-fill-mode: both ;
+    /* nombre a la animacion */
+    animation-name: fadeIn;
+
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.fadeInDown{
+    animation-duration: 1s;
+    animation-fill-mode: both ;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+}
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        /* ↓ Ayuda a animar elementos */
+        transform: translate3d(0,-100%,0);
+                    /* ↑ posiciona el elemento */
+        -webkit-transform: translate3d(0,-100%,0);
+        
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+    }
+}
+
+.fadeInUp{
+    animation-duration: 1s;
+    animation-fill-mode: both ;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp;
+}
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        /* ↓ Ayuda a nimar elementos */
+        transform: translate3d(0,100%,0);
+                    /* ↑ posiciona el elemento */
+        -webkit-transform: translate3d(0,100%,0);
+        
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+    }
+}

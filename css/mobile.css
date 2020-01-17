@@ -1,0 +1,25 @@
+@media (max-width: 776px){
+    .product{
+        max-width: 200px;
+    }
+}
+@media (max-width: 600px){
+    .main-section{
+        padding: 4%;
+    }
+    .products{
+        height: auto;
+        margin-top: 0;
+    } 
+    .product{
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+    .testimonial{
+        max-width: none;
+        margin: 5px 20%
+    }
+    .testimonial-image{
+        width: 100%;
+    }
+}
